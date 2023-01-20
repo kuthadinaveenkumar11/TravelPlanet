@@ -1,0 +1,109 @@
+<div class="overlays" >
+    <div class="content"> 
+        
+        <!-- <p *ngIf="datasaved">Record sucessfully saved</p> -->
+        <form [formGroup]="add">
+            <div class="close">
+                <button mat-raised-button color="warn" (click)="Cancel()">&times;</button>
+            </div><br><br>
+            <!-- <mat-form-field class="example-full-width"> -->
+                <!-- <mat-label>S.NO</mat-label>
+                <input matInput>
+              </mat-form-field><br> -->
+              <!-- <label for="Snum">Snum</label><br>
+              <input type="number" formControlName="Snum"><br><br> -->
+
+              <mat-form-field appearance="fill">
+                <mat-label>S_no</mat-label>
+                <input matInput type="number" formControlName="Snum">
+              </mat-form-field><br><br>
+
+
+
+
+              <mat-form-field appearance="fill">
+                <mat-label>Hotel</mat-label>
+                <mat-select formControlName="Hotel">
+                  <mat-option value="Marriott">Marriott</mat-option>
+                  <mat-option value="Aria">Aria</mat-option>
+                  <mat-option value="The Park">The Park</mat-option>
+                  <mat-option value="ITC">ITC</mat-option>
+                </mat-select>
+              </mat-form-field><br>
+            <!-- <label for="Hotel">Hotel</label><br>
+            <select class="form-control" formControlName="Hotel">
+                <option value="" disabled selected>-Not Selected-</option>
+                <option value="Marriott">Marriott</option>
+                <option value="Aria">Aria</option>
+                <option value="The Park">The Park</option>
+                <option value="ITC">ITC</option>
+            </select><br><br> -->
+            <!-- <mat-form-field appearance="fill">
+                <mat-label>Select an option</mat-label>
+                <mat-select disableRipple>
+                  <mat-option value="1">Option 1</mat-option>
+                  <mat-option value="2">Option 2</mat-option>
+                  <mat-option value="3">Option 3</mat-option>
+                </mat-select>
+              </mat-form-field> -->
+            <!-- <input type="text" formControlName="Hotel"><br><br> -->
+
+
+            <!-- <mat-form-field appearance="fill">
+              <mat-label>Choose a date</mat-label>
+              <input  matInput type="date" >
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker-toggle matIconSuffix ></mat-datepicker-toggle>
+                <mat-datepicker ></mat-datepicker>
+            </mat-form-field><br><br> -->
+            <label for="Arrival">Arrival</label><br>
+            <input type="date" formControlName="Arrival"><br><br>
+            <label for="Departure">Departure</label><br>
+            <input type="date" formControlName="Depature"><br><br>
+
+
+
+            <mat-form-field appearance="fill">
+              <mat-label for="Type">Type</mat-label>
+              <mat-select formControlName="Types">
+                <mat-option value="Luxury-Suite">Luxury-Suite</mat-option>
+                <mat-option value="Suite">Suite</mat-option>
+                <mat-option value="Economy">Economy</mat-option>
+                <mat-option value="Double">Double</mat-option>
+              </mat-select>
+            </mat-form-field><br><br>
+            <!-- <label for="Type">Type</label><br> -->
+            <!-- <input type="text" formControlName="Types"><br><br>
+            <label for="Types">Types</label> -->
+                <!-- <select class="form-control" formControlName="Types">
+                <option value="" disabled selected>-Not Selected-</option>
+                <option value="Luxury-Suite">Luxury-Suite</option>
+                <option value="Suite">Suite</option>
+                <option value="Economy">Economy</option>
+                <option value="Double">Double</option> -->
+                <!-- </select><br><br> -->
+
+
+                <mat-form-field class="example-full-width">
+                  <mat-label for="Guest">Guest</mat-label>
+                  <input matInput type="number" formControlName="Guest">
+                </mat-form-field>  <br><br>
+            <!-- <label for="Guest">Guest</label><br>
+            <input type="number" formControlName="Guest"><br><br> -->
+
+
+
+            <!-- <label for="Price">Price</label><br> -->
+            <mat-form-field appearance="fill" floatLabel="always">
+              <mat-label for="Price">Price</mat-label>
+              <input matInput type="number" class="example-right-align" placeholder="0" formControlName="Price">
+              <span matTextPrefix>$&nbsp;</span>
+            </mat-form-field><br><br>
+            <!-- <input type="number" formControlName="Price"><br><br> -->
+
+
+            <button mat-raised-button color="primary" class="btn btn-primary" (click)="save()">Save</button>&nbsp;
+            <button mat-raised-button color="primary" class="btn btn-danger" (click)="Cancel()">Cancel</button>
+            </form>
+    </div>
+</div>

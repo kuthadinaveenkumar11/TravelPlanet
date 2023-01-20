@@ -1,0 +1,46 @@
+<form>
+<!-- <button (click)="onButton()">Add</button> -->
+
+<mat-toolbar>
+
+  <span><h1>My Reservations</h1></span>
+  <span class="example-spacer"></span>
+  <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon> -->
+    <button  mat-raised-button color="accent" (click)="openDialog()">Add </button>
+
+  <!-- </button> -->
+</mat-toolbar>
+
+<table >
+    <tr>
+        <th>S.No</th>
+        <th>Hotel</th>
+        <th>Arrival</th>
+        <th>Depature</th>
+        <th>Types</th>
+        <th>Guest</th>
+        <th>Price</th>
+        <th class="manageclassoftable">Manage</th>    
+    </tr>
+    <tbody>
+      <tr *ngFor="let item of search">
+      <td>{{item.Snum}}</td>
+      <td>{{item.Hotel}}</td>
+      <td>{{item.Arrival}}</td>
+      <td>{{item.Depature}}</td>
+      <td>{{item.Types}}</td>
+      <td>{{item.Guest}}</td>
+      <td>{{item.Price}}</td>
+      <td>
+        <button mat-raised-button color="primary" (click)="clEdit(item)" class="buttonofedit">Edit</button>
+        <button mat-flat-button color="warn" (click)="clDelte(item.Snum)" class="buttonofedit">Delete</button>
+
+      </td>
+      </tr>
+    </tbody>
+  </table>
+  

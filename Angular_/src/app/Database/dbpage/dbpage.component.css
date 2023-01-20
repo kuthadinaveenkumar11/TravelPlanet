@@ -1,0 +1,10 @@
+table{
+    width: 100%;
+}
+.buttonofedit{
+width: 30%;
+margin-left: 15%;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }

@@ -1,0 +1,25 @@
+/* 
+
+
+.content {
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    padding: 40px;
+}
+
+.close button{
+    position: relative;
+    padding-right: -20px;
+    background-color: greenyellow;
+    
+} */
+.overlays {
+    margin: 10%;
+    align-items: center;
+}
+.close{
+margin-left: 60%;
+
+
+}

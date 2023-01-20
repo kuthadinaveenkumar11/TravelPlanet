@@ -1,0 +1,23 @@
+<!-- 
+  <div class="mainpage">
+    <label >Username:</label>&nbsp;&nbsp;&nbsp;
+
+    <input type="text" placeholder="Username" [(ngModel)]="Uname"><br><br>
+    <label>Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" placeholder="Password" [(ngModel)]="Pssword"><br><br>
+    <input type="checkbox">&nbsp;<label>Remember me</label>&nbsp;&nbsp;
+    <a href="forgot">Forget Password</a><br><br>
+    <Button (click)="onClick()">Login</Button>
+  </div> -->
+<form [formGroup]="loginform" (ngSubmit)="onClick()"> 
+  <div class="mainpage">
+    <label >Username:</label>&nbsp;&nbsp;&nbsp;
+
+    <input type="text" placeholder="Username" formControlName="Uname"><br><br>
+    <label>Password:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="password" placeholder="Password" formControlName="Pssword"><br><br>
+    <input type="checkbox">&nbsp;<label>Remember me</label>&nbsp;&nbsp;
+    <a href="#">Forget Password</a><br><br>
+    <Button >Login</Button>
+  </div>
+</form>
