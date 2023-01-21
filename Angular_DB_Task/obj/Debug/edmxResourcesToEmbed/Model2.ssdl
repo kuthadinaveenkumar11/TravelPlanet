@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NaveenModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="wednesday">
+    <Key>
+      <PropertyRef Name="Snum" />
+    </Key>
+    <Property Name="Snum" Type="int" Nullable="false" />
+    <Property Name="Hotel" Type="varchar" MaxLength="20" />
+    <Property Name="Arrival" Type="date" />
+    <Property Name="Depature" Type="date" />
+    <Property Name="Types" Type="varchar" MaxLength="20" />
+    <Property Name="Guest" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityContainer Name="NaveenModel1StoreContainer">
+    <EntitySet Name="wednesday" EntityType="Self.wednesday" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

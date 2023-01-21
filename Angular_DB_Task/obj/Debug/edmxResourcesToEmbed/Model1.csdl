@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NaveenModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Table_17">
+    <Key>
+      <PropertyRef Name="Emp_ID" />
+    </Key>
+    <Property Name="Emp_ID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Number" Type="Decimal" Precision="13" Scale="0" />
+    <Property Name="City" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Blood_group" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="NaveenEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Table_17" EntityType="Self.Table_17" />
+  </EntityContainer>
+</Schema>
